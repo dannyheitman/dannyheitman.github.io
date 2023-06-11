@@ -3,10 +3,10 @@
 
 @import "minima";
 
-@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://cdn.talwindcss.com');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Noto+Serif:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
-$primary-color: #1e3a8a;
+$primary-color: #1c4390;
 $secondary-color: #2563eb;
 $cream: #fffde8;
 
@@ -14,3 +14,16 @@ $cream: #fffde8;
 a {
     color: $primary-color;
 }
+
+// h2 {
+//     font-size: 1.5rem;
+//     line-height: 2rem;
+// }
+
+h1, h2 {
+    font-family: 'Diphylleia', serif;
+}
+
+// h3 {
+//     font-family: 'Noto Serif', serif;
+// }

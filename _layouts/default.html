@@ -1,9 +1,31 @@
+---
+---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   {%- include head.html -%}
-
+  
   <body>
+
+    <div class="container">
+      <a href="/" class="row justify-content-center">
+        <img id="headshot" src="https://images.squarespace-cdn.com/content/v1/5d03d934a324a5000121fa31/1560536772562-DCTAW0ACDSP090WVGQRL/dheitman.jpg" alt="" style="width: 20%; height: 20%;">
+      </a>
+      <h1 class="row justify-content-center text-center"><a href="/">Danny Heitman</a></h1>
+      <p class="row justify-content-center text-center">Magazine editor, columnist, author, and cultural commentator for national publications.</p>
+      <span class="row text-center">
+      <p><a class="px-2" href="/about">Full bio</a><a class="px-2" href="/appearances">Appearances</a> </p>
+      </span>
+      <span class="row text-center">
+        <p>
+        <a href="https://twitter.com/Danny_Heitman"><i class="bi bi-twitter"></i></a> | 
+        <a href="https://www.facebook.com/danny.heitman.16"><i class="bi bi-facebook"></i></a>
+        | <a href="mailto:danny@dannyheitman.com">danny@dannyheitman.com</a>
+      </p>
+      </span>
+    </div>
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -12,5 +34,12 @@
     </main>
 
   </body>
+
+  <style>
+    #headshot {
+      height: 16rem;
+      padding-top: 4rem;
+    }
+  </style>
 
 </html>

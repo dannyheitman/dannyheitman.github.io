@@ -1,38 +1,34 @@
 ---
 layout: home
+title: Home
 ---
 
-## About
-Danny Heitman is editor of Phi Kappa Phi’s Forum magazine, an award-winning columnist for The Advocate newspaper in Louisiana, and a nationally recognized cultural commentator and author.  He’s also served as an adjunct professor at LSU’s Manship School of Mass Communication.
+### [*The Baton Rouge Advocate* columns](https://www.theadvocate.com/baton_rouge/entertainment_life/danny_heitman/)
+### [Phi Kappa Phi's *Forum* Magazine](https://www.phikappaphi.org/publications/phi-kappa-phi-forum/forum-archive)
 
-He wrote editorials for a series of commentaries on justice reform that was a finalist for the 2019 Pulitzer Prize. 
-
-In addition to his work for Forum and The Advocate, Danny frequently writes essays and reviews for national publications, including The Wall Street Journal, The Christian Science Monitor, The New York Times, The Washington Post, The Los Angeles Times, Smithsonian and Humanities magazine. 
- 
-Two of his essays have been recognized as Notable Essays of the Year in the Mariner Books annual “Best American Essays” series.
-
-In 2008, LSU Press published Danny’s first book, “A Summer of Birds: John James Audubon at Oakley House,” which explores a pivotal season in the life of the world’s most famous bird artist. The book was adapted as a 2009 public television documentary, and Danny served as an associate producer for the project, which was nominated for an Emmy award. He’s also participated in three other Audubon documentaries, including “Rara Avis,”  directed by acclaimed filmmaker Al Reinert. You can learn about the book here.
-
-Danny’s weekly “At Random” column typically explores his life as a husband and father. His essays for national audiences have touched on a variety of topics, but he often considers the intersections of literature, nature, history and civic life.
-
-Danny has written about the craft of writing for The New York Times and the Wall Street Journal, and he’s been asked to share his insights on popular culture on National Public Radio and the BBC. He’s frequently lectured around the country, including two stints as a lecturer for The National Endowment for the Humanities.  
-
-Danny lives in Baton Rouge with his wife. Their two children, now grown and on their own, continue to inform his essays.
+---
 
 ## Recent work
-### Essays about reading and literature:
-[Decades later, my Norton Anthology endures](https://www.wsj.com/articles/revisiting-the-books-of-my-youth-thoreau-dickinson-emerson-literature-classics-8e087c88)
+[All](/posts/all), [General](/posts/general), [Nature](/posts/nature), [Reading and literature](/posts/reading-and-literature)
 
-### General essays:
-[At my daughter's wedding, Old Blue Eyes works his magic](https://www.wsj.com/articles/frank-sinatra-newborn-parenthood-lullaby-father-daughter-dance-marriage-love-11666722592)
+{% for post in site.posts %}
+  
+  {% if post.external_url %}
+  <h3>
+    <a href="{{post.external_url}}">{{ post.title }} ({{post.external_site}})</a>
+  </h3>
+  {% else %}
+    <a href="{{post.url}}">{{ post.title }}</a>
+  {% endif %}
+  {{ post.subtitle }}
+  *{{ post.date | date: "%B %Y" }}*
+  <br/><br/>
+{% endfor %}
 
-[In the obit pages, I find a celebration of life](https://www.wsj.com/articles/an-obituary-is-the-story-of-a-life-not-a-death-loss-departed-writing-11639604293)
+---
+## Books
+### [*A Summer of Birds* >>](https://lsupress.org/books/detail/a-summer-of-birds-paperback/)
+Over the summer of 1821, a cash-strapped John James Audubon worked as a tutor at Oakley Plantation in Louisiana’s rural West Feliciana Parish. This move initiated a profound change in direction for the struggling artist. Oakley’s woods teemed with life, galvanizing Audubon to undertake one of the most extraordinary endeavors in the annals of art: a comprehensive pictorial record of America’s birds. That summer, Audubon began what would eventually become his four-volume opus, Birds of America.
 
-[A symphony's lessons on old age](https://www.wsj.com/articles/the-symphonys-lessons-on-old-age-music-elderly-audience-listeners-show-beetoven-chopin-bf8774e9)
+In *A Summer of Birds*, Danny Heitman recounts the season that shaped Audubon’s destiny, sorting facts from romance to give an intimate view of the world’s most famous bird artist. A new preface marks the two-­hundredth anniversary of that eventful interlude, reflecting on Audubon’s enduring legacy among artists, aesthetes, and nature lovers in Louisiana and around the world.
 
-### Essays about nature
-[Nature just beyond the doorstep](https://www.wsj.com/articles/the-natural-history-and-antiquities-of-selborne-in-the-county-of-southampton-gilbert-white-king-george-iii-11656104585)
-
-[The glories of compost](https://www.wsj.com/articles/one-pitchfork-at-a-time-11614986687)
-
-[Into Nature Through The Page](https://www.wsj.com/articles/into-nature-through-the-page-11590836400)
